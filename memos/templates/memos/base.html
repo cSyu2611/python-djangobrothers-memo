@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Django Bros Memo</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'memos/css/style.css' %}">
+</head>
+
+<body>
+    <h1>DjangoBrosMemo</h1>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
